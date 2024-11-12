@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:30:25 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:42:30 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/12 11:44:16 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,27 +16,27 @@
 /*PART 1*/
 int ft_isalnum(int c);
 int ft_isalpha(int c);
-echo 'int ft_isdigit(int c);' >> 
-echo 'int ft_isascii(int c);' >> ft_isascii.c
-echo 'int ft_isprint(int c);' >> ft_isprint.c
-echo 'int ft_toupper(int c);' >> ft_toupper.c
-echo 'int ft_tolower(int c);' >> ft_tolower.c
-echo 'size_t  ft_strlen(const char *s);' >> ft_strlen.c
-echo 'size_t  ft_strlcpy (char *, const char *, size_t);' >> ft_strlcpy.c
-echo 'size_t  ft_strlcat (char *, const char *, size_t);' >> ft_strlcat.c
-echo 'int ft_strncmp (const char *, const char *, size_t);' >> ft_strncmp.c
-echo 'int ft_atoi(const char *nptr);' >> ft_atoi.c
-echo 'void    *ft_memset(void *s, int c, size_t n);' >> ft_memset.c
-echo 'void    ft_bzero(void *s, size_t n);' >> ft_bzero.c
-echo 'void    *ft_memcpy(void *dest, const void *src, size_t n);' >> ft_memcpy.c
-echo 'void    *ft_memmove(void *dest, const void *src, size_t n);' >> ft_memmove.c
-echo 'char    *ft_strnstr(const char *big, const char *little, size_t len);' >> ft_strnstr .c
-echo 'char    *ft_strchr(const char *s, int c);' >> ft_strchr.c
-echo 'char    *ft_strrchr(const char *s, int c);' >> ft_strrchr.c
-echo 'void    *ft_memchr(const void *s, int c, size_t n);' >> ft_memchr.c
-echo 'int ft_memcmp(const void *s1, const void *s2, size_t n);' >> ft_memcmp.c
-echo 'void    *ft_calloc(size_t nmemb, size_t size);' >> ft_calloc.c
-echo 'char    *ft_strdup(const char *s);' >> ft_strdup.c
+int ft_isdigit(int c);
+int ft_isascii(int c);
+int ft_isprint(int c);
+int ft_toupper(int c);
+int ft_tolower(int c);
+size_t  ft_strlen(const char *s);
+size_t  ft_strlcpy (char *, const char *, size_t);
+size_t  ft_strlcat (char *, const char *, size_t);
+int ft_strncmp (const char *, const char *, size_t);
+int ft_atoi(const char *nptr);
+void    *ft_memset(void *s, int c, size_t n);
+void    ft_bzero(void *s, size_t n);
+void    *ft_memcpy(void *dest, const void *src, size_t n);
+void    *ft_memmove(void *dest, const void *src, size_t n);
+char    *ft_strnstr(const char *big, const char *little, size_t len);
+char    *ft_strchr(const char *s, int c);
+char    *ft_strrchr(const char *s, int c);
+void    *ft_memchr(const void *s, int c, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+void    *ft_calloc(size_t nmemb, size_t size);
+char    *ft_strdup(const char *s);
 
 /*PART 2*/
 char    *ft_substr(char const *s, unsigned int start, size_t len);
