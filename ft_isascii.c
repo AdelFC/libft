@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:20 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 12:35:46 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:20:31 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int ft_isascii(int c)
         return(0);
 }
 
-
+/*
 #include <ctype.h>
 #include <stdio.h>
 
@@ -55,4 +55,4 @@ int	main(int argc, char **argv)
 	}
 	else
 		return (0);
-}
+}*/
