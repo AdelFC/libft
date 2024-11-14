@@ -6,8 +6,18 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:31 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:29:33 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:17:04 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_memcmp(const void *s1, const void *s2, size_t n);
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < n && s1[i] == s2[i])
+		i++;
+	if (i < n)
+		return (s1[i] - s2[i]);
+	return (0);
+}

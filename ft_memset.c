@@ -6,8 +6,8 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:39 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:29:41 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:17:14 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    *ft_memset(void *s, int c, size_t n);
+void    *ft_memset(void *s, int c, size_t n)

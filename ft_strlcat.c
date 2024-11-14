@@ -6,8 +6,8 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:49 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:29:50 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:17:33 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t  ft_strlcat (char *, const char *, size_t);
+size_t  ft_strlcat (char *s1, const char *s2, size_t)

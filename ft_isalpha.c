@@ -6,11 +6,9 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:14 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 12:39:08 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:16:36 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int ft_isalpha(int c);
 
 int ft_isalpha(int c)
 {

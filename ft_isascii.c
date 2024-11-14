@@ -6,11 +6,9 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:20 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 14:20:31 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 11:16:40 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-int ft_isascii(int c);
 
 int ft_isascii(int c)
 {

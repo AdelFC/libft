@@ -6,8 +6,22 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:57 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:29:58 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 10:54:14 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp (const char *, const char *, size_t);
+#include "libft.h"
+
+int ft_strncmp (const char *s1, const char *s2, size_t n);
+
+int ft_strncmp (const char *s1, const char *s2, size_t n)
+{
+    size_t i;
+
+    i = 0;
+    while (s1[i] && s1[i] == s2[i] && i < n)
+    {
+        
+    }
+    
+}

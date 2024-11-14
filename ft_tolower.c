@@ -6,8 +6,16 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:30:05 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/12 11:30:07 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 09:36:02 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_tolower(int c);
+
+int ft_tolower(int c)
+{
+    if (c >=  65 && c < 91)
+        return (c + 32);
+    else
+        return (c);
+}
