@@ -12,30 +12,25 @@ SRC = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 BONUS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c \
             ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 
-all : $(NAME)
+all: $(NAME)
 
 $(NAME): $(SRC:.c=.o)
-    @ar -rcs $(NAME) $(SRC:.c=.o)
-    @clear
+	@ar -rcs $(NAME) $(SRC:.c=.o)
 
 bonus: $(SRC:.c=.o) $(BONUS:.c=.o)
-    @ar -rcs $(NAME) $(SRC:.c=.o) $(BONUS:.c=.o)
-    @clear
+	@ar -rcs $(NAME) $(SRC:.c=.o) $(BONUS:.c=.o)
 
 %.c: %.o
-    @$(CC) $(CFLAGS) -c $(SRC) $(BONUS)
+	@$(CC) $(CFLAGS) -c $(SRC) $(BONUS)
 
 norm:
-    @norminette -R CheckDefine
-    @clear
+	@norminette
 
 clean:
-    @rm -rf $(SRC:.c=.o) $(BONUS:.c=.o)
-    @clear
+	@rm -rf $(SRC:.c=.o) $(BONUS:.c=.o)
 
 fclean: clean
-    @rm -rf $(NAME)
-    @clear
+	@rm -rf $(NAME)
 
 re: fclean all
 

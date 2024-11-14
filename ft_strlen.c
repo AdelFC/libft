@@ -6,11 +6,9 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:54 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 10:33:59 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 13:07:34 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-size_t  ft_strlen(const char *s);
 
 size_t  ft_strlen(const char *s)
 {

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:01 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 11:16:17 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/14 13:19:13 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	result = 0;
 	sign = 1;
-	if (nptr[0] == '-')
+	if (nptr[0] == '+')
+		i++;
+	else if (nptr[0] == '-')
 	{
 		sign *= -1;
 		i++;
@@ -37,7 +39,8 @@ int	ft_atoi(const char *nptr)
 	return (sign * result);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
 
 int	main(int argc, char **argv)
