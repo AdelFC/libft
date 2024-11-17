@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:26 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 13:23:40 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:02:21 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {
@@ -19,9 +21,6 @@ int	ft_isprint(int c)
 }
 
 /*
-#include <ctype.h>
-#include <stdio.h>
-
 int	main(int argc, char **argv)
 {
 	if (argc == 2)

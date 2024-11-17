@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:31 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 11:17:04 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:02:33 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

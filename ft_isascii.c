@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:20 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 14:21:40 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 12:25:31 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {
@@ -18,9 +20,7 @@ int	ft_isascii(int c)
 		return (0);
 }
 
-#include <ctype.h>
-#include <stdio.h>
-
+/*
 int	main(int argc, char **argv)
 {
 	if (argc == 2)
@@ -52,4 +52,4 @@ int	main(int argc, char **argv)
 	}
 	else
 		return (0);
-}
+}*/

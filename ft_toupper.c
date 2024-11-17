@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:30:08 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 14:16:46 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:04:33 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_toupper(int c)
 {
@@ -19,8 +21,6 @@ int	ft_toupper(int c)
 }
 
 /*
-#include <stdio.h>
-
 int	main(int argc, char **argv)
 {
 	int i = 0;

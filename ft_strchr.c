@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:43 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 11:17:19 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:03:18 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char    *ft_strchr(const char *s, int c)
 {
@@ -18,10 +20,8 @@ char    *ft_strchr(const char *s, int c)
 		i++;
 	return 
 }
-/**/
-#include <stdio.h>
-#include <string.h>
 
+/*
 int	main(int argc, char **argv)
 {
 	if (argc == 3)

@@ -6,9 +6,11 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:34 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/14 13:39:50 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/17 13:02:38 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -20,7 +22,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
         dest[i] = src[i];
         i++;
     }
-
+    return (dest);
 }
 
 /* `ft_memcpy` copie les `n` premiers octets de la zone mémoire `src`
