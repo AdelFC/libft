@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:11 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/17 13:01:44 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/18 11:13:09 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,37 +19,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-/*
-int	main(int argc, char **argv)
-{
-	if (argc == 2)
-	{
-		if ((isalnum(argv[1][0]) != 0) &&  (ft_isalnum(argv[1][0]) != 0))
-		{
-			printf("The first argument is an alphanumeric character.\n");
-			printf("The function ft_isalnum worked correctly.\n");
-			return (1);
-		}
-		else if ((isalnum(argv[1][0]) == 0) &&  (ft_isalnum(argv[1][0]) == 0))
-		{
-			printf("The first argument is not an alphanumeric character.\n");
-			printf("The function ft_isalnum worked correctly.\n");
-			return (1);
-		}
-		else if ((isalnum(argv[1][0]) == 0) &&  (ft_isalnum(argv[1][0]) != 0))
-		{
-			printf("The first argument is not an alphanumeric character.\n");
-			printf("The function ft_isalnum DIDN'T worked correctly!\n");
-			return (0);
-		}
-		else
-		{
-			printf("The first argument is an an alphanumeric character.\n");
-			printf("The function ft_isalnum DIDN'T worked correctly!\n");
-			return (0);
-		}
-	}
-	else
-		return (0);
-}*/
