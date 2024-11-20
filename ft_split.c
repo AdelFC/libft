@@ -6,7 +6,13 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:42:00 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:42:01 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 11:00:11 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	**ft_split(char const *s, char c)
+{
+    
+}

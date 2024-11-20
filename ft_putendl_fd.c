@@ -6,7 +6,13 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:41:52 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:41:53 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 11:04:29 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
+{
+
+}

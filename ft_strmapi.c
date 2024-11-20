@@ -6,7 +6,13 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:42:08 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:42:09 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 11:01:05 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+{
+
+}

@@ -6,7 +6,13 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:42:13 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:42:15 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 11:00:36 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+    
+}
