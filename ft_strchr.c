@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:43 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/18 11:36:23 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 08:51:07 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,14 @@ char	*ft_strchr(const char *s, int c)
 {
 	int	i;
 
-	while (s[i] != c)
+	i = 0;
+	while (*(s + i))
+	{
+		if (*(s + i) == c)
+			return ((char *)(s + i));
 		i++;
+	}
+	if (!c)
+		return ((char *)(s + i));
 	return (0);
 }

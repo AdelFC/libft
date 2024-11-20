@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:51 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/18 11:44:05 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 09:09:48 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,11 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t siz)
 		siz--;
 		while (*src && siz)
 		{
-			dst[i] = src[i];
+			*(dst + i) = *(src + i);
 			i++;
 			siz--;
 		}
-		dst[i] = '\0';
+		*(dst + i) = '\0';
 	}
 	return (len);
 }

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:36 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/18 11:42:16 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 10:38:26 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	if (pdst > psrc)
 		while (len-- > 0)
-			pdst[len] = psrc[len];
+			*(pdst + len) = *(psrc + len);
 	else
 	{
 		ft_memcpy(pdst, psrc, len);

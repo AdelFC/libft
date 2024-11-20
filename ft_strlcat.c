@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:49 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/18 11:33:39 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/20 10:15:59 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,22 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t siz)
 {
-	size_t	src_len;
-	size_t	dst_len;
+	size_t	s1;
+	size_t	s2;
 
-	src_len = ft_strlen(src);
-	dst_len = ft_strlen(dst);
-	if (dst_len >= siz)
+	s1 = ft_strlen(src);
+	s2 = ft_strlen(dst);
+	if (s2 >= siz)
 	{
-		dst_len = siz;
-		return (src_len + siz);
+		s2 = siz;
+		return (s1 + siz);
 	}
-	if (src_len < (siz - dst_len))
-		ft_memcpy(dst + dst_len, src, src_len + 1);
+	if (s1 < (siz - s2))
+		ft_memcpy(dst + s2, src, s1 + 1);
 	else
 	{
-		ft_memcpy(dst + dst_len, src, siz - dst_len - 1);
+		ft_memcpy(dst + s2, src, siz - s2 - 1);
 		*(dst + (siz - 1)) = '\0';
 	}
-	return (dst_len + src_len);
+	return (s1 + s2);
 }
