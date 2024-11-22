@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/12 11:30:02 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 08:48:40 by afodil-c         ###   ########.fr       */
+/*   Created: 2024/11/22 12:31:46 by afodil-c          #+#    #+#             */
+/*   Updated: 2024/11/22 12:32:13 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	char	*ptr;
-	int		i;
+	unsigned char	un_c;
+	char			*ptr;
+	int				i;
 
+	un_c = (unsigned char)c;
 	ptr = 0;
 	i = 0;
 	while (*(s + i))
 	{
-		if (*(s + i) == c)
+		if (*(s + i) == un_c)
 			ptr = (char *)(s + i);
 		i++;
 	}
-	if (c == '\0')
+	if (!un_c)
 		ptr = (char *)(s + i);
 	return (ptr);
 }

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:59 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 09:01:50 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 11:16:02 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,21 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	int	i;
+	size_t	i;
+	size_t	j;
 
-	i = 0;
 	if (!*little)
 		return ((char *)big);
-	while (*big && len--)
+	i = 0;
+	while (*(big + i) && i < len)
 	{
-		if (*big == *little)
-		{
-			i = 1;
-			while (*(little + i) && (*(big + i) == *(little + i))
-				&& i < (int)len)
-				i++;
-			if (!*(little + i))
-				return ((char *)big);
-		}
-		big++;
+		j = 0;
+		while (*(little + j) && *(big + i + j) && (i + j) < len && *(big + i
+				+ j) == *(little + j))
+			j++;
+		if (!*(little + j))
+			return ((char *)(big + i));
+		i++;
 	}
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:31 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:39:11 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:41:43 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 
 	ps1 = (unsigned char *)s1;
 	ps2 = (unsigned char *)s2;
-	while ((*ps1 || *ps2) && n > 0)
+	while (n > 0)
 	{
 		if (*ps1 != *ps2)
 			return (*ps1 - *ps2);

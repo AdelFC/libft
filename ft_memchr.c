@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:28 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:36:49 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:37:50 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	ps = (unsigned char *)s;
-	if (!s && n > 0)
-		return (0);
-	while (s && n--)
+	while (n)
 	{
 		if (*(ps + i) == (unsigned char)c)
 			return ((void *)(ps + i));
 		i++;
+		n--;
 	}
 	return (0);
 }

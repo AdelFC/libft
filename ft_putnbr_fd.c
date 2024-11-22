@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:41:54 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 11:23:07 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 11:16:33 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char    number;
+	char	number;
 
 	if (n == -2147483648)
 		write(fd, "-2147483648", 11);

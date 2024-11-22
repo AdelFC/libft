@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:34 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 10:37:33 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:00:28 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	char		*pdest;
-	const char	*psrc;
+	unsigned char	*pdest;
+	unsigned char	*psrc;
 
 	if (!dest && !src)
 		return (0);
-	pdest = (char *)(dest);
-	psrc = (const char *)(src);
-	while (n--)
+	pdest = (unsigned char *)(dest);
+	psrc = (unsigned char *)(src);
+	while (n)
 	{
 		*pdest++ = *psrc++;
+		n--;
 	}
 	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:01 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 09:04:10 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:01:15 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,6 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	result = 0;
 	sign = 1;
-	if (!nptr)
-		return (0);
 	while (*(nptr + i) == 32 || (*(nptr + i) >= 9 && *(nptr + i) <= 13))
 		i++;
 	if (*(nptr + i) == '-' || *(nptr + i) == '+')

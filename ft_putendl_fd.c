@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:41:52 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 11:04:29 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/22 10:48:42 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-
+	if (!fd)
+		return ;
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
