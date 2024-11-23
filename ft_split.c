@@ -6,63 +6,82 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:42:00 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/22 11:53:22 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/11/23 12:54:07 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	strlen_split(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
-	int	j;
-
-	j = 0;
-	while (*s && *s != c)
-	{
-		s++;
-		j++;
-	}
-	return (j);
-}
-
-static int	count_word(const char *s, char c)
-{
+	int	count;
 	int	i;
 
+	count = 0;
 	i = 0;
-	while (*s)
+	while (*(s + i))
 	{
-		if ((*s != c && (*(s + 1) == c || *(s + 1) == '\0')))
-			i++;
-		s++;
+		if (i == 0 && *(s + i) != c)
+			count++;
+		else if (*(s + i) == c && *(s + i + 1) && *(s + i + 1) != c)
+			count++;
+		i++;
 	}
-	return (i);
+	return (count);
+}
+
+static void	free_all(char **psplit)
+{
+	int	word;
+
+	word = 0;
+	while (*(psplit + word))
+	{
+		free(*(psplit + word));
+		word++;
+	}
+	if (psplit)
+		free(psplit);
+}
+
+static int	split_word(char **psplit, const char *s, char c, int word)
+{
+	int	start;
+	int	end;
+
+	start = 0;
+	end = 0;
+	while (*(s + end))
+	{
+		if (*(s + end) == c || *(s + end) == 0)
+			start = end + 1;
+		if (*(s + end) != c && (*(s + end + 1) == c || *(s + end + 1) == 0))
+		{
+			*(psplit + word) = malloc(sizeof(char) * (end - start + 2));
+			if (!(*(psplit + word)))
+			{
+				free_all(psplit);
+				return (-1);
+			}
+			ft_strlcpy(*(psplit + word), s + start, end - start + 2);
+			word++;
+		}
+		end++;
+	}
+	*(psplit + word) = 0;
+	return (1);
 }
 
 char	**ft_split(const char *s, char c)
 {
-	char	**result;
-	int		i;
-	int		k;
+	char	**psplit;
+	int		count;
 
-	result = (char **)malloc((count_word(s, c) + 1) * sizeof(char *));
-	if (!result || !s)
+	count = count_words(s, c);
+	psplit = malloc(sizeof(char *) * (count + 1));
+	if (!psplit)
 		return (0);
-	i = 0;
-	k = 0;
-	while (*s == c && *s)
-		s++;
-	while (*s)
-	{
-		*(result + k) = (char *)malloc((strlen_split(s, c) + 1) * sizeof(char));
-		if (!*(result + k))
-			return (0);
-		i = 0;
-		while (*s && *s != c)
-			*(*(result + k) + i++) = *s++;
-		*(*(result + k++) + i) = 0;
-		while (*s == c && *s)
-			s++;
-	}
-	return (*(result + k) = 0, result);
+	if (split_word(psplit, s, c, 0) == -1)
+		return (0);
+	return (psplit);
 }
