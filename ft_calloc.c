@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:29:08 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/20 09:02:29 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/12/02 10:35:01 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 		i = 0;
 		while (i < (size * nmemb))
 		{
-			*(ptr + i) = 0;
+			ptr[i] = 0;
 			i++;
 		}
 		return (ptr);

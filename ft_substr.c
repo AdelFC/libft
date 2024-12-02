@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:42:13 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/22 11:20:48 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/12/02 11:10:40 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = 0;
 	while (i < len)
 	{
-		*(result + i) = *(s + start + i);
+		result[i] = s[start + i];
 		i++;
 	}
-	*(result + i) = 0;
+	result[i] = 0;
 	return (result);
 }

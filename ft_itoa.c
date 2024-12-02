@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 10:59:31 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/22 11:17:16 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/12/02 10:38:34 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static char	*allocate_mem(int len)
 	i = 0;
 	while (i <= len)
 	{
-		*(m + i) = '0';
+		m[i] = '0';
 		i++;
 	}
 	return (m);
@@ -66,12 +66,12 @@ char	*ft_itoa(int n)
 	i = len - 1;
 	while (nb != 0)
 	{
-		*(result + i) = ((nb % 10) + 48);
+		result[i] = ((nb % 10) + 48);
 		nb = nb / 10;
 		i--;
 	}
 	if (n < 0)
 		*result = '-';
-	*(result + len) = '\0';
+	result[len] = 0;
 	return (result);
 }

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/12 11:30:08 by afodil-c          #+#    #+#             */
-/*   Updated: 2024/11/17 13:04:33 by afodil-c         ###   ########.fr       */
+/*   Updated: 2024/12/02 11:11:33 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,3 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
-
-/*
-int	main(int argc, char **argv)
-{
-	int i = 0;
-	if (argc == 2)
-	{
-		printf("The word is %s. \n", argv[1]);
-		while (argv[1][i])
-		{
-			printf("With ft_toupper, argument is %s \n",
-				ft_toupper(argv[1][i]));
-			i++;
-		}
-	}
-	else
-		return (0);
-}*/
