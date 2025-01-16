@@ -1,6 +1,6 @@
-### **Libft - Description des Fonctions**
+## Libft - Description des Fonctions
 
-#### **Partie 1 : Fonctions Libc**
+### Partie 1 : Fonctions Libc
 - **`ft_isalpha`** : Vérifie si un caractère est une lettre (majuscule ou minuscule).
 - **`ft_isdigit`** : Vérifie si un caractère est un chiffre (0-9).
 - **`ft_isalnum`** : Vérifie si un caractère est alphanumérique (lettre ou chiffre).
@@ -22,7 +22,7 @@
 - **`ft_memcmp`** : Compare deux zones mémoire.
 - **`ft_atoi`** : Convertit une chaîne en entier.
 
-#### **Partie 2 : Fonctions supplémentaires**
+### Partie 2 : Fonctions supplémentaires
 - **`ft_strdup`** : Alloue et copie une chaîne dans une nouvelle zone mémoire.
 - **`ft_calloc`** : Alloue une zone mémoire initialisée à zéro.
 - **`ft_substr`** : Extrait une sous-chaîne d’une chaîne donnée.
