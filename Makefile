@@ -9,15 +9,23 @@ SRCS = ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c \
 		ft_putchar_fd.c ft_putstr_fd.c ft_strtrim.c ft_substr.c \
 		ft_striteri.c ft_strjoin.c ft_split.c ft_strmapi.c ft_atoi.c \
 
+BONUS := ft_lstnew_bonus.c ft_lstadd_front_bonus.c
+
+#  ft_lstsize_bonus.c \
+# 		ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c \
+# 		ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c \
+
 OBJS = $(SRCS:.c=.o)
+
+BOBJS = $(BONUS:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
-bonus: $(OBJS) 
-	ar -rcs $(NAME) $(OBJS) 
+bonus: $(OBJS) $(BOBJS)
+	ar -rcs $(NAME) $(OBJS) $(BOBJS)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o $@

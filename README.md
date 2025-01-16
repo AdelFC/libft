@@ -36,3 +36,14 @@
 - **`ft_putchar_fd`** : Écrit un caractère dans un descripteur de fichier.
 - **`ft_putstr_fd`** : Écrit une chaîne dans un descripteur de fichier.
 - **`ft_putendl_fd`** : Écrit une chaîne suivie d’un saut de ligne dans un descripteur de fichier.
+
+### Partie BONUS : Listes
+- **`ft_lstnew`** :
+- **`ft_lstadd_front`** :
+- **`ft_lstsize`** :
+- **`ft_lstlast`** :
+- **`ft_lstadd_back`** :
+- **`ft_lstdelone`** :
+- **`ft_lstclear`** :
+- **`ft_lstiter`** :
+- **`ft_lstmap`** :
