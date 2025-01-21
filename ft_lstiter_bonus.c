@@ -6,8 +6,17 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 12:41:40 by afodil-c          #+#    #+#             */
-/*   Updated: 2025/01/16 12:41:42 by afodil-c         ###   ########.fr       */
+/*   Updated: 2025/01/20 12:28:57 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
+{
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 12:41:50 by afodil-c          #+#    #+#             */
-/*   Updated: 2025/01/16 14:37:28 by afodil-c         ###   ########.fr       */
+/*   Updated: 2025/01/20 10:31:53 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-    new->next = *lst;
+	new->next = *lst;
 	*lst = new;
 }
-

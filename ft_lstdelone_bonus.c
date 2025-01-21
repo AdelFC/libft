@@ -6,8 +6,14 @@
 /*   By: afodil-c <afodil-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/16 12:41:43 by afodil-c          #+#    #+#             */
-/*   Updated: 2025/01/16 12:41:45 by afodil-c         ###   ########.fr       */
+/*   Updated: 2025/01/20 11:58:13 by afodil-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
+{
+	del(lst->content);
+	free(lst);
+}
