@@ -21,25 +21,10 @@ BLUE = \033[0;94m
 CYAN = \033[0;96m
 DEF_COLOR = \033[0m
 
-BARS := "▰▰▱▱▱▱▱▱▱▱▱ 17%" "▰▰▰▱▱▱▱▱▱▱▱ 23%" "▰▰▰▰▱▱▱▱▱▱▱ 38%" \
-		"▰▰▰▰▰▱▱▱▱▱▱ 42%" "▰▰▰▰▰▰▱▱▱▱▱ 51%" "▰▰▰▰▰▰▰▱▱▱▱ 65%" \
-		"▰▰▰▰▰▰▰▰▱▱▱ 79%" "▰▰▰▰▰▰▰▰▰▱▱ 87%" "▰▰▰▰▰▰▰▰▰▰ 94%" \
-		"▰▰▰▰▰▰▰▰▰▰ 100%"
-
 all: $(NAME)
-
 $(NAME): $(OBJS)
 	@ar -rcs $(NAME) $(OBJS)
 	@echo "$(GREEN)$(NAME) compiled successfully!$(DEF_COLOR)"
-	@for bar in $(BARS); do \
-		clear; \
-		echo "\n\n\n\t\t     $$bar"; \
-		sleep 0.1; \
-	done
-	clear
-	@echo "\n\n\t\t❈────────•✦•❅•✦•───────❈";
-	@echo "\t\t\033[1;3;5;32m    LOADING COMPLETED\033[0m";
-	@echo "\t\t❈────────•✦•❅•✦•───────❈\n\n";
 
 bonus: $(OBJS) $(BOBJS)
 	@ar -rcs $(NAME) $(OBJS) $(BOBJS)
